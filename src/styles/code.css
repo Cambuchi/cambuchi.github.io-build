@@ -85,14 +85,14 @@
   #terminal-header {
     width: 95vw;
     height: 50px;
-    font-size: .85rem;
+    font-size: .80rem;
   }
   #terminal {
     width: 95vw;
     height: auto;
-    padding: 15px 10px;
+    padding: 10px 8px 15px 8px;
     gap: 5px;
     line-height: 25px;
-    font-size: .85rem;
+    font-size: .80rem;
   }
 }
