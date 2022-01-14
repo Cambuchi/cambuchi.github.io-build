@@ -27,7 +27,7 @@ const introduction = () => {
   let assign = document.createElement('div');
   assign.classList = 'input';
   assign.classList.add('hidden');
-  assign.textContent = '> const cam = Cambuchi(human, male);';
+  assign.textContent = "> const cam = Cambuchi(human, 'he/him');";
   terminal.append(assign);
 
   const keys = Object.keys(about);
@@ -66,6 +66,8 @@ const introduction = () => {
         const link = document.createElement('a');
         link.href = about[key][item];
         link.textContent = item;
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noreferrer noopener');
         if (item === 'LinkedIn') {
           text.append(beginning);
           text.append(link);
@@ -87,14 +89,16 @@ const animate = () => {
 
   launch.classList.remove('hidden');
   launch.style.width = `${launch.textContent.length + 2}ch`;
-  launch.style.animation = `typing 1.5s steps(${
+  launch.style.animation = `typing 2s steps(${
     launch.textContent.length + 2
   }), blink .5s step-end 4 alternate`;
   launch.classList.add('typing-demo');
 
   launch.onanimationend = () => {
-    animateItem(1);
-    launch.onanimationend = null;
+    setTimeout(() => {
+      animateItem(1);
+      launch.onanimationend = null;
+    }, 350);
   };
 };
 
@@ -106,14 +110,25 @@ const animateItem = (index) => {
   const terminalItems = terminal.children;
   const launch = terminalItems[index];
 
-  console.log(terminalItems[index].textContent);
+  // console.log(terminalItems[index].textContent);
 
-  if (terminalItems[index].textContent[0] === '>') {
+  if (terminalItems[index].textContent[-1] === ';') {
+    launch.classList.remove('hidden');
+    launch.style.width = `${launch.textContent.length + 1}ch`;
+    launch.style.animation = `typing 2.5s steps(${
+      launch.textContent.length + 1
+    }), blink .5s step-end 5 alternate`;
+    launch.classList.add('typing-demo');
+    launch.onanimationend = () => {
+      animateItem(index + 1);
+      launch.onanimationend = null;
+    };
+  } else if (terminalItems[index].textContent[0] === '>') {
     launch.classList.remove('hidden');
     launch.style.width = `${launch.textContent.length + 1}ch`;
     launch.style.animation = `typing 1.5s steps(${
       launch.textContent.length + 1
-    }), blink .5s step-end 4 alternate`;
+    }), blink .5s step-end 3 alternate`;
     launch.classList.add('typing-demo');
     launch.onanimationend = () => {
       animateItem(index + 1);
@@ -121,9 +136,10 @@ const animateItem = (index) => {
     };
   } else {
     terminalItems[index].classList.remove('hidden');
-    setTimeout(200);
-    animateItem(index + 1);
-    launch.onanimationend = null;
+    setTimeout(() => {
+      animateItem(index + 1);
+      launch.onanimationend = null;
+    }, 250);
   }
 };
 

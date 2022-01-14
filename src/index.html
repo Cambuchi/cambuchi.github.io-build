@@ -6,7 +6,9 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
-  <link rel="icon" href="favicon.ico">
+  <meta property='og:image' content="<%= htmlWebpackPlugin.options.ogimage %>">
+  <meta property='twitter:card' content="<%= htmlWebpackPlugin.options.ogimage %>">
+  <meta property='twitter:image' content="<%= htmlWebpackPlugin.options.ogimage %>">
 </head>
 
 <body>

@@ -8,12 +8,16 @@ const createButtons = () => {
   blog.classList = 'btn';
   blog.href = 'https://cambuchi.github.io/blog';
   blog.textContent = 'blog';
+  blog.setAttribute('target', '_blank');
+  blog.setAttribute('rel', 'noreferrer noopener');
 
   const resume = document.createElement('a');
   resume.id = 'resume-btn';
   resume.classList = 'btn';
   resume.href = 'https://cambuchi.github.io/resume/';
   resume.textContent = 'resume';
+  resume.setAttribute('target', '_blank');
+  resume.setAttribute('rel', 'noreferrer noopener');
 
   buttons.append(blog);
   buttons.append(resume);

@@ -1,9 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-import ogImage from 'C:/Users/Cam Nguyen/Documents/GitHub/new-homepage/src/assets/images/og-image.jpg';
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     index: './src/index.js',
   },
@@ -15,6 +14,8 @@ module.exports = {
       title: 'cam nguyen | home',
       favicon: './src/assets/images/favicon.ico',
       template: './src/index.html',
+      ogimage:
+        'https://raw.githubusercontent.com/Cambuchi/cambuchi.github.io/master/184a3ef9578d5c2d5859.jpg',
       meta: {
         description: {
           name: 'description',
@@ -22,7 +23,7 @@ module.exports = {
         },
         keyword: {
           name: 'keywords',
-          content: 'Blog',
+          content: 'Blog, Vanta.js, Javascript, Webpack',
         },
         'og:title': {
           property: 'og:title',
@@ -37,14 +38,6 @@ module.exports = {
           property: 'og:url',
           content: 'https://cambuchi.github.io/',
         },
-        'og:image': {
-          property: 'og:image',
-          content: ogImage,
-        },
-        'twitter:card': {
-          name: 'twitter:card',
-          content: ogImage,
-        },
         'twitter:title': {
           name: 'twitter:title',
           content: 'cam nguyen | home',
@@ -52,10 +45,6 @@ module.exports = {
         'twitter:description': {
           name: 'twitter:description',
           content: 'Welcome to the homepage of Cam Nguyen!',
-        },
-        'twitter:image': {
-          name: 'twitter:image',
-          content: ogImage,
         },
       },
     }),
