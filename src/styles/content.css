@@ -1,0 +1,29 @@
+/*//////////////////*/
+ /* CSS FOR CONTENT */
+ /*/////////////////*/
+
+ @font-face {
+  font-family: 'JetBrains Mono';
+  src: url(../assets/fonts/JetBrainsMono-VariableFont_wght.ttf) format('truetype');
+  font-style: normal;
+}
+
+#content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10vh;
+  font-family: 'JetBrains Mono', sans-serif;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #content {
+    width: 100vw;
+    padding: 2vh 10px;
+  }
+}

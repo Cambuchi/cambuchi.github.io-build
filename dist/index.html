@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    cam nguyen | home
+  </title>
+  <meta name="description" content="Welcome to the homepage of Cam Nguyen!">
+  <meta name="keywords" content="Blog">
+  <meta property="og:title" content="cam nguyen | home">
+  <meta property="og:description" content="Welcome to the homepage of Cam Nguyen!">
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://cambuchi.github.io/">
+  <meta property="og:image" content="./src/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="cam nguyen | home">
+  <meta name="twitter:description" content="Welcome to the homepage of Cam Nguyen!">
+  <meta name="twitter:image" content="./src/assets/images/og-image.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+<meta name="description" content="Welcome to the homepage of Cam Nguyen!"><meta name="keywords" content="Blog"><meta property="og:title" content="cam nguyen | home"><meta property="og:description" content="Welcome to the homepage of Cam Nguyen!"><meta property="og:type" content="blog"><meta property="og:url" content="https://cambuchi.github.io/"><meta property="og:image" content="<%=require("./src/assets/images/og-image.png")%>"><meta name="twitter:card" content="<%=require("./src/assets/images/og-image.png")%>"><meta name="twitter:title" content="cam nguyen | home"><meta name="twitter:description" content="Welcome to the homepage of Cam Nguyen!"><meta name="twitter:image" content="<%=require("./src/assets/images/og-image.png")%>"><link rel="icon" href="favicon.ico"><script defer src="index.js"></script></head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+  <script>
+    setTimeout(() => {
+      VANTA.WAVES({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        // color: 0x194972, // light blue
+        // color: 0xb1e, // dark blue
+        color: 0x50505, //dark grey
+        shininess: 20.00,
+        waveSpeed: 0.50,
+        zoom: 0.85
+      })
+    }, 250);
+  </script>
+</body>
+
+</html>

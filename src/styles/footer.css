@@ -1,0 +1,29 @@
+/*/////////////////*/
+ /* CSS FOR FOOTER */
+ /*////////////////*/
+
+ #footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  background: #282828;
+  color: rgb(218, 218, 219);
+  font-size: 0.75rem;
+  height: 2.5vh;
+  position: sticky;
+  top: 100vh;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 750px) {
+  #footer {
+
+    font-size: 0.75rem;
+    height: 4.5vh;
+    position: sticky;
+    top: 100vh;
+    flex-shrink: 0;
+  }
+}
