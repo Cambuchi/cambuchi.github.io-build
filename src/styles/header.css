@@ -4,8 +4,7 @@
 
 @font-face {
   font-family: 'segoe ui';
-  src: url(../assets/fonts/SegoeUI-VF.ttf) format('truetype');
-  font-style: normal;
+  src: url(../assets/fonts/segoeuib.ttf) format('truetype');
 }
 
 #header {
@@ -27,8 +26,8 @@
 .title {
   color: rgb(218, 218, 219);
   font-size: 24px;
-  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
-  font-weight: 700;
+  font-family: -apple-system,BlinkMacSystemFont,'segoe ui',Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+  font-weight: 500;
   line-height: 60px;
   padding: 0px;
   margin: 0px;

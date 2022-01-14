@@ -15,7 +15,7 @@ module.exports = {
       favicon: './src/assets/images/favicon.ico',
       template: './src/index.html',
       ogimage:
-        'https://raw.githubusercontent.com/Cambuchi/cambuchi.github.io/master/184a3ef9578d5c2d5859.jpg',
+        'https://combinatronics.com/Cambuchi/cambuchi.github.io-build/main/src/assets/images/og-image.jpg',
       meta: {
         description: {
           name: 'description',

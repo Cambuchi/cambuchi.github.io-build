@@ -12,8 +12,8 @@
 #buttons a {
   text-decoration: none;
   font-size: 24px;
-  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
-  font-weight: 700;
+  font-family: -apple-system,BlinkMacSystemFont,'segoe ui',Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+  font-weight: 500;
   line-height: 60px;
   padding: 0px;
   margin: 0px;
