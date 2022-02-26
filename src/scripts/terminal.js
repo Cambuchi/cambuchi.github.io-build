@@ -4,7 +4,8 @@ const about = {
   'cam.location': 'San Jose, CA',
   'cam.interests': '["D&D", "VR", "Cooking", "Coding"]',
   'cam.education': 'B.A. Sociology - Princeton University',
-  'cam.skills': '["Javascript", "Python", "Bash", "Webpack", "git", "CAD/CAM"]',
+  'cam.skills':
+    '["Javascript", "Python", "Sass", "Webpack", "git", "React", "Bash", "Jest"]',
   'cam.contact': {
     LinkedIn: 'https://www.linkedin.com/in/cam-nguyen-6a1ab257/',
     GitHub: 'https://github.com/Cambuchi',
