@@ -2,7 +2,8 @@
 const createFooter = () => {
   const footer = document.createElement('div');
   footer.id = 'footer';
-  footer.textContent = 'Copyright © 2021 Cam Nguyen';
+  let date = new Date();
+  footer.textContent = `Copyright © ${date.getFullYear()} Cam Nguyen`;
 
   return footer;
 };

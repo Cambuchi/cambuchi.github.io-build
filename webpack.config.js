@@ -14,7 +14,8 @@ module.exports = {
       title: 'cam nguyen | home',
       favicon: './src/assets/images/favicon.ico',
       template: './src/index.html',
-      ogimage: '',
+      ogimage:
+        'https://cdn.jsdelivr.net/gh/Cambuchi/cambuchi.github.io-build@main/src/assets/images/og-image.jpg',
       meta: {
         description: {
           name: 'description',
